@@ -1,26 +1,70 @@
 * {
     box-sizing: border-box;
+    --bg-color: #FFFFF9;
+    --main-text-color: #004056;
+    --text-color-1: #2C858D;
+    --text-hover: #C9FFD5; 
+}
+
+.hidden {
+  display: none;
 }
 
 body {
     font-family: 'Lora', serif;
     font-size: 20px;
-    color: #444;
+    color: var(--main-text-color);
     text-align: center;
     line-height: 1.5;
+    background-color: var(--bg-color);
 }
 
-h1,
+h1 {
+  font-family: 'Lora', serif;
+}
+
 h2,
 h3,
 h4 {
     font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
 }
 
+h2{
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
 nav,
 footer {
     padding: 1% 0;
-    background-color: #aaa;
+background-color: var(--main-text-color);
+  color: var(--bg-color);
+}
+#menu {
+  position: relative;
+  top: 5px;
+  left: 5px;
+  width: 60px;
+  height: 40px;
+}
+#menu-bars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 50px;
+  z-index: 101;
+  color: var(--main-text-color);
+  background-color: var(--bg-color);
+  cursor: pointer;
+}
+
+#menu:hover #menu-bars,
+#menu-bars:hover {
+  color: var(--text-color-1);
 }
 
 nav {
@@ -28,19 +72,71 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 10;
+    z-index: 100;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  padding: 5px;
 }
 
 header {
     padding: 12% 0;
 }
 
+#headshot {
+  height: 150px;
+  border-radius: 50%;
+}
+
+main {
+ 
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 section {
     min-height: 200px;
     padding: 6% 0;
-    background-color: #ddd;
+}
+
+.projects {
+  color: var(--text-color-1);
+}
+
+.tech-list li{
+  display: inline-block;
+}
+
+img .me {
+  display: block;
+  width: 100%;
 }
 
 section:nth-child(even) {
-    background-color: #bbb;
+
+}
+
+button {
+  height: 30px;
+  width: 60px;
+  font-weight: bold;
+  font-size: 16px;
+  background: var(--text-color-1);
+  color: var(--bg-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--main-text-color);
 }
