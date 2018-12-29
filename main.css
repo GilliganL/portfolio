@@ -3,11 +3,11 @@
     --bg-color: #FFFFF9;
     --main-text-color: #004056;
     --text-color-1: #2C858D;
-    --text-hover: #C9FFD5; 
+    --text-hover: #C9FFD5;
 }
 
 .hidden {
-  display: none;
+    display: none;
 }
 
 body {
@@ -17,54 +17,73 @@ body {
     text-align: center;
     line-height: 1.5;
     background-color: var(--bg-color);
+    margin: 0;
 }
 
 h1 {
-  font-family: 'Lora', serif;
+    font-family: 'Lora', serif;
 }
 
 h2,
 h3,
 h4 {
     font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: 700;
+    font-weight: 700;
 }
 
-h2{
-  font-weight: 300;
+h2 {
+    position: relative;
+    font-weight: 300;
+    font-size: 40px;
+    border-bottom: 2px solid;
+}
+
+h2 span {
+    position: absolute;
+    top: -200px;
+}
+
+h3 {
+    font-size: 26px;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
+    color: var(--bg-color);
 }
-nav,
-footer {
-    padding: 1% 0;
-background-color: var(--main-text-color);
-  color: var(--bg-color);
-}
+
 #menu {
-  position: relative;
-  top: 5px;
-  left: 5px;
-  width: 60px;
-  height: 40px;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    width: 60px;
+    height: 40px;
+    z-index: 101;
 }
+
 #menu-bars {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 30px;
-  width: 50px;
-  z-index: 101;
-  color: var(--main-text-color);
-  background-color: var(--bg-color);
-  cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 45px;
+    z-index: 101;
+    border-radius: 5px;
+    color: var(--main-text-color);
+    background-color: var(--bg-color);
+    cursor: pointer;
 }
 
 #menu:hover #menu-bars,
 #menu-bars:hover {
-  color: var(--text-color-1);
+    color: var(--text-color-1);
+}
+
+nav,
+footer {
+    padding: 1% 0;
+    background-color: var(--main-text-color);
+    color: var(--bg-color);
 }
 
 nav {
@@ -73,70 +92,168 @@ nav {
     left: 0;
     right: 0;
     z-index: 100;
+    height: 150px;
 }
 
 ul {
-  padding: 0;
+    padding: 0;
 }
 
 li {
-  list-style: none;
-  padding: 5px;
+    list-style: none;
+    padding: 5px;
 }
 
 header {
-    padding: 12% 0;
+    padding: 50px 0;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header-h2 {
+    width: fit-content;
+}
+
+#header-h3 {
+    font-size: 24px;
+    width: 85%;
 }
 
 #headshot {
-  height: 150px;
-  border-radius: 50%;
-}
-
-main {
- 
+    height: 150px;
+    border-radius: 50%;
 }
 
 .container {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 section {
     min-height: 200px;
-    padding: 6% 0;
+    padding: 5px 0;
+    display: block;
 }
 
 .projects {
+    color: var(--main-text-color);
+}
+
+.projects > .container > h2, 
+.projects > .container > h3 {
   color: var(--text-color-1);
 }
 
-.tech-list li{
-  display: inline-block;
+.project-image {
+    width: 90%;
 }
 
-img .me {
-  display: block;
-  width: 100%;
+.tech {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
 }
 
-section:nth-child(even) {
-
+.tech-list li {
+    display: inline-block;
 }
+
+#image-div {
+    width: 100%;
+}
+
+img.me {
+    display: block;
+    width: 100%;
+}
+/* 
+section.projects:nth-child(even) {
+    background: var(--text-color-1);
+    color: var(--bg-color);
+} */
 
 button {
-  height: 30px;
-  width: 60px;
-  font-weight: bold;
-  font-size: 16px;
-  background: var(--text-color-1);
-  color: var(--bg-color);
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+    height: 30px;
+    width: 60px;
+    font-weight: bold;
+    font-size: 16px;
+    background: var(--text-color-1);
+    color: var(--bg-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 button:hover {
-  background: var(--main-text-color);
+    background: var(--main-text-color);
+}
+
+footer {
+    padding: 15px 0;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+.social-list li {
+    display: inline-block;
+}
+
+.social-list li a {
+    color: var(--bg-color);
+}
+
+.social-list li a:hover {
+    color: var(--text-hover);
+}
+
+@media only screen and (min-width: 1000px) {
+    body {
+        margin: 0;
+    }
+    .container {
+        max-width: 960px;
+    }
+    #menu {
+        display: none;
+    }
+    header {
+        position: fixed;
+        left: 0;
+        height: 80%;
+        width: 25%;
+        padding: 15px 10px;
+        background: var(--main-text-color);
+        color: var(--bg-color);
+    }
+    #headshot {
+        height: initial;
+        width: 33%;
+    }
+    nav {
+        position: relative;
+        order: 2;
+    }
+    main {
+        margin-left: 25%;
+        width: 75%;
+        padding: 20px;
+    }
+    .project-image {
+        width: 70%;
+    }
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        height: 20%;
+        width: 25%;
+        padding-right: 30px;
+        text-align: right;
+    }
 }
