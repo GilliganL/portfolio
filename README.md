@@ -8,7 +8,7 @@ Full Stack Web Development Portfolio website.
 ![image](https://s3-us-west-1.amazonaws.com/tailored-knits-repository/Portfolio_Landing.png)
 
 ### Mobile:
-![image](https://s3-us-west-1.amazonaws.com/tailored-knits-repository/Portfolio_Landing_Mobile.png =250x)
+<img src='https://s3-us-west-1.amazonaws.com/tailored-knits-repository/Portfolio_Landing_Mobile.png' style='width:250px'>
 
 ### Technology Used:
 
