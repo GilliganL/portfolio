@@ -9,33 +9,57 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" type="text/css" href="main.css">
-  <link href="https://fonts.googleapis.com/css?family=Lora:400i|Open+Sans+Condensed:300,700" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,500i,600,600i,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 
 <body>
+  <header role='banner' class='mobile-header top'>
+    <h1>Lynsey Powell</h1>
+  </header>
+  <header class='mobile-header action'>
+    <nav role='navigation'>
+      <ul>
+        <li><a class='anchor' href='#projects'>Projects</a></li>
+        <li><a class='anchor' href='#about'>About</a></li>
+        <li><a class='anchor' href='#contact'>Contact</a></li>
+      </ul>
+    </nav>
+    <div id='menu'>
+      <i id='menu-bars' class="fas fa-bars"></i>
+    </div>
+  </header>
 
-  <header role='banner'>
+  <header role='banner' class='full-header'>
     <div class='inner'>
-      <nav class='hidden' role='navigation'>
+      <nav class='' role='navigation'>
         <ul>
           <li><a class='anchor' href='#projects'>Projects</a></li>
           <li><a class='anchor' href='#about'>About</a></li>
           <li><a class='anchor' href='#contact'>Contact</a></li>
         </ul>
       </nav>
-      <div id='menu'>
-        <i id='menu-bars' class="fas fa-bars"></i>
-      </div>
       <h1>Lynsey Powell</h1>
-      <img id='headshot' src='./images/headshot.jpg'
-        alt='Lynsey Powell headshot'>
+      <img id='headshot' src='./images/headshot.jpg' alt='Lynsey Powell headshot'>
       <h2 id='header-h2'>Hi there!</h2>
       <h3 id='header-h3'>I'm Lynsey, a fullstack developer and problem solver.</h3>
     </div>
   </header>
   <main role='main'>
+    <section class='about'>
+      <div class='container'>
+        <h2><span id='about'></span>About Me</h2>
+        <p>Lynsey Powell is a web developer and information systems professional who recently graduated from the Full
+          Stack Web Development program at Thinkful. I love technology data to improve work efficiency, solve problems
+          and
+          discover new insights. I enjoy the logic and structure of backend programming. Watching it come to life with
+          a beautiful, user friendly frontend is always exciting.</p>
+        <p>When away from the computer you can find me combining logic, math, and creativity in knitwear. I'm an avid
+          knitter,knitwear designer, and yarn collector. I love to take my knitting to a brewery around Denver and with
+          me while traveling. You can also find me enjoying all that the Rocky Mountains have to offer.</p>
+      </div>
+    </section>
     <section class='projects'>
       <div class='container'>
         <h2><span id='projects'></span>Projects</h2>
@@ -47,7 +71,8 @@
           <a class='live' href='https://tailored-knits.herokuapp.com/' target='_blank' aria-live='assertive'>
             <button class='live-button'>Live</button>
           </a>
-          <a class='repo' href='https://github.com/GilliganL/tailored-knits-react' target='_blank' aria-live='assertive'>
+          <a class='repo' href='https://github.com/GilliganL/tailored-knits-react' target='_blank'
+            aria-live='assertive'>
             <button class='repo-button'>Repo</button>
           </a>
         </div>
@@ -85,7 +110,8 @@
           </a>
         </div>
         <p>I wanted to demonstrate the use of back-end technologies and have fun. I decided to build the social media
-          site I want where users can share photos with captions that doesn't encourage advertising, politics, or egos.</p>
+          site I want where users can share photos with captions that doesn't encourage advertising, politics, or egos.
+        </p>
         <p><span class='tech'>Technologies:</span>
           Node, Express, MongoDB, AWS S3, Mongoose, Passport, JWT, Heroku, Travis, mLab, REST APIs, Mocha, Chai,
           Javascript, JQuery, CSS, HTML </p>
@@ -106,10 +132,12 @@
           <div class='project-image'>
             <img id='tk-image' src='./images/LandingNWCP.png' alt='Northwest Construction Parts screenshot'>
           </div>
-          <a class='live' href='https://gilliganl.github.io/NorthwestConstructionParts/' target='_blank' aria-live='assertive'>
+          <a class='live' href='https://gilliganl.github.io/NorthwestConstructionParts/' target='_blank'
+            aria-live='assertive'>
             <button class='live-button'>Live</button>
           </a>
-          <a class='repo' href='https://github.com/GilliganL/NorthwestConstructionParts' target='_blank' aria-live='assertive'>
+          <a class='repo' href='https://github.com/GilliganL/NorthwestConstructionParts' target='_blank'
+            aria-live='assertive'>
             <button class='repo-button'>Repo</button>
           </a>
         </div>
@@ -127,35 +155,28 @@
         </ul>
       </div>
     </section>
-    <section class='about'>
+
+    <section class='contact'>
       <div class='container'>
-        <h2><span id='about'></span>About Me</h2>
-        <div id='image-div'>
-          <img class='me' src='./images/landscape2.jpg' alt='Lynsey Powell'>
-        </div>
-        <p>Lynsey Powell is a web developer and information systems professional who recently graduated from the Full
-          Stack Web Development bootcamp at Thinkful. I love technology data to improve work efficiency, solve problems and
-          discover new insights. I enjoy the logic and structure of backend programming. Watching it come to life with
-          a beautiful, user friendly frontend is always exciting.</p>
-        <p>When away from the computer you can find me combining logic, math, and creativity in knitwear. I'm an avid
-          knitter,knitwear designer, and yarn collector. I love to take my knitting to a brewery around Denver and with
-           me while traveling. You can also find me enjoying all that the Rocky Mountains have to offer.</p>
+        <h2><span id='contact'></span>Contact</h2>
+        <ul class='social-list' id='contact'>
+          <li><a href='https://www.linkedin.com/in/lynsey-powell/' target='_blank'><i class="fab fa-linkedin"></i></a>
+          </li>
+          <li><a href='https://github.com/GilliganL' target='_blank'><i class="fab fa-github"></i></a></li>
+          <li><a href='mailto:lynseympowell@gmail.com' title='Email me'><i class='fas fa-envelope'></i></a></li>
+        </ul>
       </div>
     </section>
   </main>
   <footer role='content-info'>
-    <ul class='social-list' id='contact'>
-      <li><a href='https://www.linkedin.com/in/lynsey-powell/' target='_blank'><i class="fab fa-linkedin"></i></a></li>
-      <li><a href='https://github.com/GilliganL' target='_blank'><i class="fab fa-github"></i></a></li>
-    </ul>
     <p>Created by Lynsey Powell</p>
   </footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-  crossorigin="anonymous"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0"
-  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"
+  integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 <script src="index.js"></script>
 
 </html>
