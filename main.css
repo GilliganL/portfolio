@@ -34,7 +34,7 @@ h4 {
 
 h2 {
     position: relative;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 36px;
     border-bottom: 2px solid;
 }
@@ -208,6 +208,7 @@ section {
 .projects>.container>h2,
 .projects>.container>h3 {
     color: var(--text-color-1);
+    margin: 15px 0;
 }
 
 .project-card {
@@ -240,6 +241,8 @@ section {
 
 .tech-list li {
     display: inline-block;
+    font-size: 20px;
+    padding: 0 2px;
 }
 
 #image-div {
