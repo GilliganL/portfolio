@@ -72,7 +72,8 @@ header {
 }
 
 .mobile-header.top {
-    margin-top: 110px;
+    margin-top: 20vh;
+    height: 80vh;
 }
 
 .mobile-header.top h1 {
@@ -83,6 +84,7 @@ header {
     bottom: 0;
 }
 
+/* 
 .content-veil {
     background: var(--main-text-color);
     content: "";
@@ -99,7 +101,7 @@ header {
     height: 100%;
     opacity: .5;
     z-index: 10;
-}
+} */
 
 .full-header {
     padding: 50px 0;
@@ -138,13 +140,13 @@ nav {
     background: var(--bg-color);
     line-height: 3.75rem;
     overflow: hidden;
-    transition: transform .35s cubic-bezier(.445,.05,.55,.95), -webkit-transform .35s cubic-bezier(.445,.05,.55,.95);
+    transition: transform .35s cubic-bezier(.445, .05, .55, .95), -webkit-transform .35s cubic-bezier(.445, .05, .55, .95);
     z-index: 0;
 }
 
 nav.open {
-    -webkit-transform: translate3d(0,-100%,0);
-    transform: translate3d(0,-100%,0);
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
     z-index: 10;
 }
 
@@ -158,7 +160,7 @@ li {
     list-style: none;
 }
 
-ul > li:nth-child(1) > .anchor {
+ul>li:nth-child(1)>.anchor {
     border-top: 1px solid var(--text-color-1);
 }
 
@@ -192,13 +194,13 @@ ul > li:nth-child(1) > .anchor {
     border-radius: 50%;
 }
 
-main {
-    padding-top: 60px;
+main section:nth-child(1) {
+    padding-top: 0;
 }
 
 section {
     min-height: 200px;
-    padding: 20px 0;
+    padding: 5vh 0;
     display: block;
 }
 
@@ -208,7 +210,7 @@ section {
     padding: 0 20px;
 }
 
-.container > p {
+.container>p {
     text-align: left;
 }
 
@@ -288,6 +290,11 @@ button:hover {
 .contact {
     height: calc(100vh - 120px);
 }
+
+.contact .container {
+    padding: 0 25px;
+}
+
 .contact .container h2 {
     text-align: left;
     border: none;
@@ -326,6 +333,25 @@ footer {
 footer p {
     font-size: 16px;
     margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .mobile-header.top {
+        margin-top: 15vh;
+        height: 35vh;
+    }
+    .mobile-header.top h1 {
+        font-size: 48px;
+        height: 120px;
+        padding-top: 30px;
+    }
+    .container,
+    .contact .container {
+        padding: 0 50px;
+    }
+    .contact {
+        height: 50vh;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
