@@ -12,6 +12,7 @@ function handleMenubutton() {
   $('#menu').click(event => {
     event.preventDefault();
     $('nav').toggleClass('open');
+    $('.content-veil').toggleClass('open');
   })
 }
 

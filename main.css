@@ -22,8 +22,8 @@ body {
 
 h1 {
     margin: 0.2em 0;
-    font-size: 32px;
-    font-weight: 500;
+    font-size: 34px;
+    font-weight: 600;
 }
 
 h2,
@@ -74,6 +74,24 @@ header {
     bottom: 0;
 }
 
+.content-veil {
+    background: var(--main-text-color);
+    content: "";
+    display: block;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    -webkit-transition: opacity .15s cubic-bezier(.445, .05, .55, .95);
+    transition: opacity .15s cubic-bezier(.445, .05, .55, .95);
+}
+
+.content-veil.open {
+    height: 100%;
+    opacity: .5;
+    z-index: 10;
+}
+
 .full-header {
     padding: 50px 0;
 }
@@ -104,13 +122,6 @@ header {
     color: var(--text-color-1);
 }
 
-/* nav,
-footer {
-    padding: 15px 0;
-    background-color: var(--main-text-color);
-    color: var(--bg-color);
-} */
-
 nav {
     position: absolute;
     top: 0;
@@ -130,7 +141,7 @@ nav.open {
 
 ul {
     list-style: none;
-    padding: 8px 0;
+    padding: 0;
     margin: 0;
 }
 
@@ -171,7 +182,7 @@ ul > li:nth-child(1) > .anchor {
 }
 
 main {
-    padding: 60px 0;
+    padding-top: 60px;
 }
 
 section {
@@ -183,7 +194,7 @@ section {
 .container {
     width: 100%;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
 .container > p {
@@ -260,6 +271,40 @@ button:hover {
     background: var(--text-color-1);
 }
 
+.contact {
+    height: calc(100vh - 120px);
+}
+.contact .container h2 {
+    text-align: left;
+    border: none;
+}
+
+.contact-info {
+    text-align: left;
+    padding: 0 20px;
+}
+
+.contact-info h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.social-list li {
+    display: inline-block;
+}
+
+.social-list li a {
+    font-size: 24px;
+    margin: 0 5px;
+}
+
 footer {
     padding: 15px 0;
 }
@@ -268,14 +313,6 @@ footer p {
     font-size: 16px;
     margin: 0;
 }
-
-.social-list li {
-    display: inline-block;
-}
-
-.social-list li a {}
-
-.social-list li a:hover {}
 
 @media only screen and (min-width: 1000px) {
     /* body {
