@@ -3,6 +3,7 @@
     --bg-color: #FCFCFC;
     --main-text-color: #004056;
     --text-color-1: #2C858D;
+    --text-color-2: rgb(87, 197, 207);
     --text-hover: #C9FFD5;
 }
 
@@ -24,6 +25,7 @@ h1 {
     margin: 0.2em 0;
     font-size: 34px;
     font-weight: 600;
+    color: var(--text-color-2);
 }
 
 h2,
@@ -83,25 +85,6 @@ header {
 .mobile-header.action {
     bottom: 0;
 }
-
-/* 
-.content-veil {
-    background: var(--main-text-color);
-    content: "";
-    display: block;
-    opacity: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    -webkit-transition: opacity .15s cubic-bezier(.445, .05, .55, .95);
-    transition: opacity .15s cubic-bezier(.445, .05, .55, .95);
-}
-
-.content-veil.open {
-    height: 100%;
-    opacity: .5;
-    z-index: 10;
-} */
 
 .full-header {
     padding: 50px 0;
@@ -352,9 +335,43 @@ footer p {
     .contact {
         height: 50vh;
     }
+    .anchor {
+        padding: 0 40px;
+        font-size: 22px;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
+    .inner {}
+    nav {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 75px;
+        overflow: visible;
+        z-index: 10;
+    }
+    nav ul {
+        display: inline;
+        display: -webkit-inline-box;
+    }
+    nav ul .anchor {
+        width: 150px;
+    }
+    h1 {
+        width: 50%;
+        margin: 0;
+        text-align: left;
+        padding-left: 75px;
+    }
+    .anchor {
+        width: 150px;
+        margin: 0;
+    }
+    ul>li:nth-child(1)>.anchor {
+        border-top: none;
+    }
     /* body {
         margin: 0;
     }
