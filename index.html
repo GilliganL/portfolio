@@ -22,39 +22,25 @@
 </head>
 
 <body>
-  <header role='banner' class='mobile-header top'>
+  <header role='banner' class='top'>
     <h1>Lynsey Powell</h1>
-    <img class='headshot' src='./images/headshot.jpg' alt='Lynsey Powell headshot'>
-    <h2 class='header-h2'>Hi there!</h2>
-    <h3 class='header-h3'>I'm Lynsey, a fullstack developer and problem solver.</h3>
-  </header>
-  <header class='mobile-header action'>
-    <div id='menu'>
-      <i id='menu-bars' class="fas fa-bars"></i>
-      <i id='menu-open' class='fas fa-times hidden'></i>
-    </div>
-    <nav role='navigation'>
-      <ul>
-        <li><a class='anchor' href='#about'>About</a></li>
-        <li><a class='anchor' href='#projects'>Projects</a></li>
-        <li><a class='anchor' href='#contact'>Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <header role='banner' class='full-header'>
-    <nav role='navigation'>
-      <h1>Lynsey Powell</h1>
-      <ul>
-        <li><a class='anchor' href='#about'>About</a></li>
-        <li><a class='anchor' href='#projects'>Projects</a></li>
-        <li><a class='anchor' href='#contact'>Contact</a></li>
-      </ul>
-    </nav>
     <div class='inner'>
       <img class='headshot' src='./images/headshot.jpg' alt='Lynsey Powell headshot'>
       <h2 class='header-h2'>Hi there!</h2>
       <h3 class='header-h3'>I'm Lynsey, a fullstack developer and problem solver.</h3>
+    </div>
+    <div class='action'>
+      <div id='menu'>
+        <i id='menu-bars' class="fas fa-bars"></i>
+        <i id='menu-open' class='fas fa-times hidden'></i>
+      </div>
+      <nav role='navigation'>
+        <ul>
+          <li><a class='anchor' href='#about'>About</a></li>
+          <li><a class='anchor' href='#projects'>Projects</a></li>
+          <li><a class='anchor' href='#contact'>Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
   <main role='main'>
@@ -79,7 +65,7 @@
         <h3>Tailored Knits</h3>
         <div class='project-card'>
           <div class='project-image'>
-            <img id='tk-image' src='./images/LandingTK.png' alt='Tailored Knits screenshot'>
+            <img src='./images/LandingTK.png' alt='Tailored Knits screenshot'>
           </div>
           <a class='live' href='https://tailored-knits.herokuapp.com/' target='_blank' aria-live='assertive'>
             <button class='live-button'>Live</button>
@@ -113,7 +99,7 @@
         <h3>Postcard</h3>
         <div class='project-card'>
           <div class='project-image'>
-            <img id='tk-image' src='./images/Timeline.png' alt='Postcard screenshot'>
+            <img src='./images/Timeline.png' alt='Postcard screenshot'>
           </div>
           <a class='live' href='https://postcard-2018.herokuapp.com/' target='_blank' aria-live='assertive'>
             <button class='live-button'>Live</button>
@@ -143,7 +129,7 @@
         <h3>Northwest Construction Parts</h3>
         <div class='project-card'>
           <div class='project-image'>
-            <img id='tk-image' src='./images/LandingNWCP.png' alt='Northwest Construction Parts screenshot'>
+            <img src='./images/LandingNWCP.png' alt='Northwest Construction Parts screenshot'>
           </div>
           <a class='live' href='https://gilliganl.github.io/NorthwestConstructionParts/' target='_blank'
             aria-live='assertive'>
@@ -177,17 +163,19 @@
           <p id='contact-three'>lynseympowell@gmail.com</p>
           <h3 id='contact-two'>Let's Connect</h3>
           <ul class='social-list' id='contact-four'>
-            <li><a href='https://www.linkedin.com/in/lynsey-powell/' target='_blank'><i class="fab fa-linkedin"></i></a>
+            <li><a href='https://www.linkedin.com/in/lynsey-powell/' title='Visit my LinkedIn page' target='_blank'><i
+                  class="fab fa-linkedin"></i></a>
             </li>
-            <li><a href='https://github.com/GilliganL' target='_blank'><i class="fab fa-github"></i></a></li>
-            <li><a href='https://www.instagram.com/thebitchinstitch/' target='_blank'><i
+            <li><a href='https://github.com/GilliganL' title='View my Github repository' target='_blank'><i
+                  class="fab fa-github"></i></a></li>
+            <li><a href='https://www.instagram.com/thebitchinstitch/' title='Say hi on Instagram' target='_blank'><i
                   class='fab fa-instagram'></i></a></li>
           </ul>
         </div>
       </div>
     </section>
   </main>
-  <footer role='content-info'>
+  <footer role='contentinfo'>
     <p>Created by Me</p>
   </footer>
 </body>

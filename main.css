@@ -3,7 +3,7 @@
     --bg-color: #FCFCFC;
     --main-text-color: #004056;
     --text-color-1: #2C858D;
-    --text-color-2: #57c5cf;
+    --text-color-2: #C5DDDF;
     --text-hover: #C9FFD5;
 }
 
@@ -25,7 +25,7 @@ h1 {
     margin: 0.2em 0;
     font-size: 32px;
     font-weight: 500;
-    color: var(--text-color-2);
+    color: var(--text-color-1);
 }
 
 h2,
@@ -56,16 +56,12 @@ a {
 }
 
 header {
-    display: none;
     background: var(--text-color-2);
-}
-
-.active-header {
     display: block;
 }
 
 .mobile-header.top h1,
-.mobile-header.action {
+.mobile-header > .action {
     position: fixed;
     width: 100%;
     height: 60px;
@@ -83,8 +79,12 @@ header {
     top: 0;
 }
 
-.mobile-header.action {
+.mobile-header > .action {
     bottom: 0;
+}
+
+.full-header > .action > #menu {
+    display: none;
 }
 
 #menu {
@@ -107,10 +107,10 @@ header {
     color: var(--main-text-color);
     background-color: var(--bg-color);
     cursor: pointer;
-    -webkit-transition: display 0.7s ease;
-    -moz-transition: display 0.7s ease;
-    -o-transition: display 0.7s ease;
-    transition: display 0.7s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
 }
 
 #menu:hover #menu-bars,
@@ -331,8 +331,8 @@ footer {
     }
     .mobile-header.top h1 {
         font-size: 48px;
-        height: 120px;
-        padding-top: 30px;
+        height: 100px;
+        padding-top: 15px;
     }
     .container,
     .contact .container {
@@ -345,11 +345,6 @@ footer {
         padding: 0 40px;
         font-size: 22px;
     }
-    footer p {
-        font-size: 16px;
-        margin: 0;
-        line-height: 40px;
-    }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -360,7 +355,6 @@ footer {
     .full-header {
         padding: 75px 0;
         height: 600px;
-        /* background: var(--text-color-2); */
     }
     #menu {
         display: none;
@@ -368,7 +362,7 @@ footer {
     nav {
         position: fixed;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
         height: 70px;
         overflow: visible;
@@ -385,12 +379,15 @@ footer {
         font-weight: 500;
     }
     h1 {
+        position: fixed;
+        top: 10px;
         font-size: 34px;
         font-weight: 600;
         width: 50%;
         margin: 0;
         text-align: left;
         padding-left: 75px;
+        z-index: 11;
     }
     .anchor {
         width: 150px;
@@ -496,11 +493,17 @@ footer {
         order: 4;
     }
     footer {
+        display: block;
         left: 0;
         bottom: 0;
         height: 40px;
         width: 100%;
         text-align: right;
         padding-right: 40px;
+    }
+    footer p {
+        font-size: 16px;
+        margin: 0;
+        line-height: 40px;
     }
 }
