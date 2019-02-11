@@ -1,14 +1,17 @@
 # Portfolio
 
-## [Live Demo](https://gilliganl.github.io/portfolio/)
+## [Live Site](https://gilliganl.github.io/portfolio/)
 
 Full Stack Web Development Portfolio website. 
 
 ### Landing:
-![image](https://s3-us-west-1.amazonaws.com/tailored-knits-repository/Portfolio_Landing.png)
+<img src='./images/portfolioLanding.png' width='250px' />
+
+### Tablet:
+<img src='./images/portfolioTablet.png' width='250px' />
 
 ### Mobile:
-<img src='https://s3-us-west-1.amazonaws.com/tailored-knits-repository/Portfolio_Landing_Mobile.png' width='250px' />
+<img src='./images/portfolioMobile.png' width='250px' />
 
 ### Technology Used:
 
