@@ -131,6 +131,9 @@ nav {
 
 nav.open {
     -webkit-transform: translate3d(0, -100%, 0);
+    -moz-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    -o-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
     z-index: 10;
 }
