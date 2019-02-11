@@ -4,6 +4,13 @@
 
 Full Stack Web Development Portfolio website. 
 
+### Technology Used:
+
+* HTML
+* CSS
+* Javascript
+* JQuery
+
 ### Landing:
 <img src='./images/portfolioLanding.png' />
 
@@ -13,9 +20,4 @@ Full Stack Web Development Portfolio website.
 ### Mobile:
 <img src='./images/portfolioMobile.png' width='250px' />
 
-### Technology Used:
 
-HTML
-CSS
-Javascript
-JQuery
