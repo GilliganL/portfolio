@@ -95,7 +95,8 @@ header {
     z-index: 10;
 }
 
-#menu-bars {
+#menu-bars,
+#menu-open {
     position: absolute;
     top: 15px;
     right: 10px;
@@ -106,10 +107,16 @@ header {
     color: var(--main-text-color);
     background-color: var(--bg-color);
     cursor: pointer;
+    -webkit-transition: display 0.7s ease;
+    -moz-transition: display 0.7s ease;
+    -o-transition: display 0.7s ease;
+    transition: display 0.7s ease;
 }
 
 #menu:hover #menu-bars,
-#menu-bars:hover {
+#menu-bars:hover,
+#menu:hover #menu-open,
+#menu-open:hover {
     color: var(--text-color-1);
 }
 
@@ -153,6 +160,7 @@ ul>li:nth-child(1)>.anchor {
     width: 100%;
     padding: 0 20px;
     text-align: left;
+    font-size: 20px;
 }
 
 .inner {
@@ -309,6 +317,7 @@ button:hover {
 .social-list li a {
     font-size: 24px;
     margin: 0 5px;
+    color: var(--bg-color);
 }
 
 footer {
@@ -317,8 +326,8 @@ footer {
 
 @media only screen and (min-width: 768px) {
     .mobile-header.top {
-        margin-top: 15vh;
-        height: 35vh;
+        padding-top: 15vh;
+        height: 50vh;
     }
     .mobile-header.top h1 {
         font-size: 48px;
