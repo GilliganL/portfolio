@@ -295,15 +295,16 @@ button:hover {
 
 .contact .container {
     padding: 0 25px;
+    margin-top: 60px;
+    width: 320px;
+  
 }
 
 .contact .container h2 {
-    text-align: left;
     border: none;
 }
 
 .contact-info {
-    text-align: left;
     padding: 0 20px;
 }
 
@@ -349,6 +350,9 @@ footer {
     }
     .contact {
         height: 50vh;
+    }
+    .contact .container {
+        margin-top: 55px;
     }
     .anchor {
         padding: 0 40px;
@@ -474,29 +478,14 @@ footer {
         height: 500px;
         padding-top: 50px;
     }
+    .contact .container {
+        margin-top: 100px;
+    }
     .contact .container h2 {
-        font-size: 44px;
+        font-size: 40px;
     }
     .contact-info {
-        -webkit-display: flex;
-        -moz-display: flex;
-        -ms-display: flex;
-        display: flex;
-        -webkit-flex-wrap: wrap;
-        -moz-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        height: 125px;
-    }
-    .contact-info h3,
-    .contact-info p,
-    .contact-info ul {
-        width: 410px;
-        height: 50px;
-    }
-    .contact-info h3 {
-        font-size: 28px;
-        margin-bottom: 10px;
+        text-align: center;
     }
     .contact-info p {
         margin-bottom: 15px;
