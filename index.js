@@ -13,8 +13,8 @@ function handleMenubutton() {
   $('#menu').click(event => {
     event.preventDefault();
     $('nav').toggleClass('open');
-    $('#menu-bars').toggleClass('hidden');
-    $('#menu-open').toggleClass('hidden');
+    // $('#menu-bars').toggleClass('hidden');
+    // $('#menu-open').toggleClass('hidden');
   })
 }
 

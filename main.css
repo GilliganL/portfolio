@@ -23,8 +23,8 @@ body {
 
 h1 {
     margin: 0.2em 0;
-    font-size: 34px;
-    font-weight: 600;
+    font-size: 32px;
+    font-weight: 500;
     color: var(--text-color-2);
 }
 
@@ -84,12 +84,6 @@ header {
 
 .mobile-header.action {
     bottom: 0;
-}
-
-.full-header {
-    padding: 75px 0;
-    height: 600px;
-    background: var(--text-color-2);
 }
 
 #menu {
@@ -276,7 +270,7 @@ button:hover {
 }
 
 .contact {
-    height: calc(100vh - 120px);
+    height: calc(100vh - 60px);
     background: var(--main-text-color);
     color: var(--bg-color);
 }
@@ -320,7 +314,7 @@ footer {
     display: none;
 }
 
-/* @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     .mobile-header.top {
         margin-top: 15vh;
         height: 35vh;
@@ -353,6 +347,11 @@ footer {
         margin: 0;
         font-size: 18px;
     }
+    .full-header {
+        padding: 75px 0;
+        height: 600px;
+        background: var(--text-color-2);
+    }
     #menu {
         display: none;
     }
@@ -376,6 +375,8 @@ footer {
         font-weight: 500;
     }
     h1 {
+        font-size: 34px;
+        font-weight: 600;
         width: 50%;
         margin: 0;
         text-align: left;
@@ -492,4 +493,4 @@ footer {
         text-align: right;
         padding-right: 40px;
     }
-} */
+}
