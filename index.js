@@ -1,4 +1,5 @@
 
+//set header based on screen width
 function setHeader() {
   if ($(window).width() < 769) {
     $('.mobile-header').addClass('active-header');
@@ -7,10 +8,13 @@ function setHeader() {
   }
 }
 
+//open menu options for smaller screens
 function handleMenubutton() {
   $('#menu').click(event => {
     event.preventDefault();
     $('nav').toggleClass('open');
+    $('#menu-bars').toggleClass('hidden');
+    $('#menu-open').toggleClass('hidden');
   })
 }
 

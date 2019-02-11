@@ -166,18 +166,18 @@ ul>li:nth-child(1)>.anchor {
     align-items: center;
 }
 
-#header-h2 {
+.header-h2 {
     width: fit-content;
     margin: 20px auto;
 }
 
-#header-h3 {
+.header-h3 {
     font-size: 24px;
     width: 85%;
     margin: 0 auto;
 }
 
-#headshot {
+.headshot {
     height: 150px;
     border-radius: 50%;
 }
@@ -316,13 +316,11 @@ button:hover {
     margin: 0 5px;
 }
 
-footer p {
-    font-size: 16px;
-    margin: 0;
-    line-height: 40px;
+footer {
+    display: none;
 }
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
     .mobile-header.top {
         margin-top: 15vh;
         height: 35vh;
@@ -342,6 +340,11 @@ footer p {
     .anchor {
         padding: 0 40px;
         font-size: 22px;
+    }
+    footer p {
+        font-size: 16px;
+        margin: 0;
+        line-height: 40px;
     }
 }
 
@@ -385,7 +388,7 @@ footer p {
     ul>li:nth-child(1)>.anchor {
         border-top: none;
     }
-    #headshot {
+    .headshot {
         height: initial;
         width: 20%;
     }
@@ -401,12 +404,12 @@ footer p {
         min-height: 400px;
     }
     .projects>.container>h2,
-.projects>.container>h3 {
-    margin: 20px 0;
-}
-.projects>.container>h3 {
-    font-size: 30px;
-}
+    .projects>.container>h3 {
+        margin: 20px 0;
+    }
+    .projects>.container>h3 {
+        font-size: 30px;
+    }
     .project-card {
         width: 70%;
     }
@@ -489,4 +492,4 @@ footer p {
         text-align: right;
         padding-right: 40px;
     }
-}
+} */
