@@ -57,6 +57,7 @@ a {
 
 header {
     display: none;
+    background: var(--text-color-2);
 }
 
 .active-header {
@@ -74,8 +75,8 @@ header {
 }
 
 .mobile-header.top {
-    margin-top: 20vh;
-    height: 80vh;
+    padding-top: 20vh;
+    height: 100vh;
 }
 
 .mobile-header.top h1 {
@@ -350,7 +351,7 @@ footer {
     .full-header {
         padding: 75px 0;
         height: 600px;
-        background: var(--text-color-2);
+        /* background: var(--text-color-2); */
     }
     #menu {
         display: none;
