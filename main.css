@@ -1,10 +1,5 @@
 * {
     box-sizing: border-box;
-    --bg-color: #FCFCFC;
-    --main-text-color: #004056;
-    --text-color-1: #2C858D;
-    --text-color-2: #C5DDDF;
-    --text-hover: #C9FFD5;
 }
 
 .hidden {
@@ -14,10 +9,10 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    color: var(--main-text-color);
+    color: #004056;
     text-align: center;
     line-height: 1.5;
-    background-color: var(--bg-color);
+    background-color: #FCFCFC;
     margin: 0;
 }
 
@@ -25,7 +20,7 @@ h1 {
     margin: 0.2em 0;
     font-size: 32px;
     font-weight: 500;
-    color: var(--text-color-1);
+    color: #2C858D;
 }
 
 h2,
@@ -52,20 +47,20 @@ h3 {
 
 a {
     text-decoration: none;
-    color: var(--main-text-color);
+    color: #004056;
 }
 
 header {
-    background: var(--text-color-2);
+    background: #C5DDDF;
     display: block;
 }
 
 .mobile-header.top h1,
-.mobile-header > .action {
+.mobile-header>.action {
     position: fixed;
     width: 100%;
     height: 60px;
-    background: var(--bg-color);
+    background: #FCFCFC;
     z-index: 10;
     margin: 0;
 }
@@ -79,11 +74,11 @@ header {
     top: 0;
 }
 
-.mobile-header > .action {
+.mobile-header>.action {
     bottom: 0;
 }
 
-.full-header > .action > #menu {
+.full-header>.action>#menu {
     display: none;
 }
 
@@ -104,8 +99,8 @@ header {
     width: 45px;
     z-index: 101;
     border-radius: 5px;
-    color: var(--main-text-color);
-    background-color: var(--bg-color);
+    color: #004056;
+    background-color: #FCFCFC;
     cursor: pointer;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
@@ -117,14 +112,14 @@ header {
 #menu-bars:hover,
 #menu:hover #menu-open,
 #menu-open:hover {
-    color: var(--text-color-1);
+    color: #2C858D;
 }
 
 nav {
     position: absolute;
     top: 0;
     width: 100%;
-    background: var(--bg-color);
+    background: #FCFCFC;
     line-height: 3.75rem;
     overflow: hidden;
     transition: transform .35s cubic-bezier(.445, .05, .55, .95), -webkit-transform .35s cubic-bezier(.445, .05, .55, .95);
@@ -151,20 +146,30 @@ li {
 }
 
 ul>li:nth-child(1)>.anchor {
-    border-top: 1px solid var(--text-color-1);
+    border-top: 1px solid #2C858D;
 }
 
 .anchor {
     display: block;
-    border-bottom: 1px solid var(--text-color-1);
+    border-bottom: 1px solid #2C858D;
     width: 100%;
     padding: 0 20px;
     text-align: left;
     font-size: 20px;
 }
 
+.anchor:hover {
+    color: #2C858D;
+}
+
 .inner {
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
     display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
     align-items: center;
 }
@@ -206,12 +211,12 @@ section {
 }
 
 .projects {
-    color: var(--main-text-color);
+    color: #004056;
 }
 
 .projects>.container>h2,
 .projects>.container>h3 {
-    color: var(--text-color-1);
+    color: #2C858D;
     margin: 15px 0;
 }
 
@@ -263,8 +268,8 @@ button {
     width: 100px;
     font-weight: bold;
     font-size: 16px;
-    background: var(--main-text-color);
-    color: var(--bg-color);
+    background: #004056;
+    color: #FCFCFC;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -275,13 +280,13 @@ button {
 }
 
 button:hover {
-    background: var(--text-color-1);
+    background: #2C858D;
 }
 
 .contact {
     height: calc(100vh - 60px);
-    background: var(--main-text-color);
-    color: var(--bg-color);
+    background: #004056;
+    color: #FCFCFC;
 }
 
 .contact .container {
@@ -317,7 +322,7 @@ button:hover {
 .social-list li a {
     font-size: 24px;
     margin: 0 5px;
-    color: var(--bg-color);
+    color: #FCFCFC;
 }
 
 footer {
@@ -361,8 +366,17 @@ footer {
     }
     nav {
         position: fixed;
+        -webkit-display: flex;
+        -moz-display: flex;
+        -ms-display: flex;
         display: flex;
+        -webkit-justify-content: flex-end;
+        -moz-justify-content: flex-end;
+        -ms-justify-content: flex-end;
         justify-content: flex-end;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
         align-items: center;
         height: 70px;
         overflow: visible;
@@ -442,7 +456,7 @@ footer {
         transition: background-color 0.5s ease, opacity 0.5s ease;
     }
     .project-card:hover>.project-image:before {
-        background: var(--bg-color);
+        background: #FCFCFC;
         opacity: 0.7;
     }
     .project-card:hover>a {
@@ -460,7 +474,13 @@ footer {
         font-size: 44px;
     }
     .contact-info {
+        -webkit-display: flex;
+        -moz-display: flex;
+        -ms-display: flex;
         display: flex;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         height: 125px;
     }
@@ -478,7 +498,7 @@ footer {
         margin-bottom: 15px;
     }
     .social-list li a {
-        color: var(--bg-color);
+        color: #FCFCFC;
     }
     #contact-one {
         order: 1;
